@@ -241,7 +241,7 @@ También se utilizan estados locales dentro de componentes como `Contact` y `Gam
 La solicitud principal se realiza mediante:
 
 ```javascript
-fetch("http://localhost:3000/api/productos")
+fetch("http://localhost:3000/api/productos");
 ```
 
 Los datos recibidos se almacenan utilizando:
@@ -259,10 +259,7 @@ Si la API no responde, la aplicación intenta cargar el archivo JSON local ubica
 Las categorías se generan automáticamente a partir de los géneros presentes en el catálogo:
 
 ```javascript
-const categorias = [
-  "Todas",
-  ...new Set(juegos.map((juego) => juego.genero)),
-];
+const categorias = ["Todas", ...new Set(juegos.map((juego) => juego.genero))];
 ```
 
 El filtro por categoría puede utilizarse en conjunto con la búsqueda por nombre.
@@ -475,7 +472,7 @@ https://github.com/Johanromanque/EFT_Frontend_I_GameHub
 La aplicación será publicada mediante GitHub Pages.
 
 ```text
-PENDIENTE_ACTUALIZAR_GITHUB_PAGES
+https://johanromanque.github.io/EFT_Frontend_I_GameHub/
 ```
 
 ---
